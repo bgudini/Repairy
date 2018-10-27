@@ -1,0 +1,220 @@
+h3{
+  margin: 70px 0 0 70px;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.main{
+  overflow: hidden;
+}
+
+.hud__bottom {
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  box-shadow: 0px -7px 30px 3px rgb(223, 223, 223);
+}
+
+.hud__top{
+  z-index: 100;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 7px 30px 3px rgb(223, 223, 223);
+}
+
+.driver{
+  position: absolute;
+  top: 455px;
+  left: 295px;
+}
+
+.driver2{
+  position: absolute;
+  top: 255px;
+  left: 475px;
+}
+
+.driver__mark{
+  position: relative;
+}
+
+.driver__img{
+  position: absolute;
+  height: 55px;
+  border-radius: 50%;
+  border: #000 3px solid;
+  z-index: 2;
+}
+
+.driver__img2{
+  position: absolute;
+  height: 55px;
+  border-radius: 50%;
+  border: #000 3px solid;
+  z-index: 2;
+}
+
+.driver__img_active{
+  border: none;
+  top: 3px;
+}
+
+.driver__img_active2{
+  border: none;
+  top: 3px;
+}
+
+.driver__inform{
+  height: 220px;
+  width: 220px;
+  background-color: #fff;
+  position: absolute;
+  top: -83px;
+  left: -10px;
+  z-index: 1;
+  display: none;
+  border: 1px solid #000;
+  border-radius: 50%;
+  font: 14px Open Sans; 
+}
+
+.driver__inform2{
+  height: 220px;
+  width: 220px;
+  background-color: #fff;
+  position: absolute;
+  top: -83px;
+  left: -10px;
+  z-index: 1;
+  display: none;
+  border: 1px solid #000;
+  border-radius: 50%;
+  font: 14px Open Sans; 
+}
+
+.driver__inform_active{
+  display: block;
+}
+
+.driver__inform_active2{
+  display: block;
+}
+
+.inform__p{
+  font-size: 13px;
+  margin: 0px 0 0 70px;
+}
+
+.mark__logo{
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  height: 33px;
+}
+
+.inform__a{
+  text-decoration: underline;
+  margin-left: 70px;
+}
+
+.photo__img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile{
+  padding: 90px 20px 90px 20px;
+}
+
+.profile__inform{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.profile__name{
+  margin-left: 30px;
+}
+
+.profile__description{
+  font: 18px Open Sans;
+  padding: 20px 0;
+}
+
+h1{
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+.profile__rate{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.profile__same{
+  display: flex;
+  justify-content: space-around;
+}
+
+.star{
+  width: 40px;
+  height: 40px;
+}
+
+.same__photo{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.same{
+  display: flex;
+  align-items: center;
+}
+
+.same__star{
+  width: 10px;
+  height: 10px;
+}
+
+.same__inform{
+  margin-left: 10px;
+}
+
+.same__inform p{
+  margin: 0;
+}
+
+.logo{
+  height: 100%;
+  width: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */

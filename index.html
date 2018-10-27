@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GpP</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="map">
+        <div class="map__bg">
+            <img src="images/map.png" alt="">
+        </div>
+        <div class="driver">
+            <div class="driver__mark">
+                <img src="images/2bAMACkqtk8.jpg" alt="" class="driver__img">
+                <div class="driver__inform">
+                    <img src="images/phoneRepair.svg" alt="" class="mark__logo">
+                    <h3>Глеб Протасов</h3>
+                    <p class="inform__p">Ремонт iPhone за 30 минут, лучший в Канаде</p>
+                    <a class="inform__a" href="inform.html">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+        <div class="driver2">
+                <div class="driver__mark">
+                    <img src="images/y_92c715d9.jpg" alt="" class="driver__img2">
+                    <div class="driver__inform2">
+                        <img src="images/pcRepair.svg" alt="" class="mark__logo">
+                        <h3>Дмитрий Мурашкин</h3>
+                        <p class="inform__p">Ремонт iPhone за 30 минут, лучший в Канаде</p>
+                        <a class="inform__a" href="same1.html">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+        <div class="hud__top">
+            <a href="index.html" class="logo"><img src="images/GPP Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div class="hud__bottom">
+            <img src="images/user.svg" alt="" class="masters">
+            <img src="images/star.svg" alt="" class="rate">
+            <img src="images/search.svg" alt="" class="loopa">
+        </div>
+    </div>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script>
+      $(function(){
+          $('.map').draggable();
+      });
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
