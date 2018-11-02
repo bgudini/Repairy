@@ -9,6 +9,7 @@ a{
 
 .main{
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .hud__bottom {
@@ -61,28 +62,31 @@ a{
 
 .driver__img{
   position: absolute;
-  height: 55px;
-  border-radius: 50%;
-  border: #000 3px solid;
+  height: 75px;
   z-index: 2;
 }
 
 .driver__img2{
   position: absolute;
-  height: 55px;
-  border-radius: 50%;
-  border: #000 3px solid;
+  height: 75px;
   z-index: 2;
 }
 
 .driver__img_active{
-  border: none;
-  top: 3px;
+  opacity: 0;
 }
 
 .driver__img_active2{
-  border: none;
-  top: 3px;
+  opacity: 0;
+}
+
+.driver__photo{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  left: 10px;
 }
 
 .driver__inform{
@@ -126,13 +130,6 @@ a{
   margin: 0px 0 0 70px;
 }
 
-.mark__logo{
-  position: absolute;
-  top: 50px;
-  left: 16px;
-  height: 33px;
-}
-
 .inform__a{
   text-decoration: underline;
   margin-left: 70px;
@@ -146,6 +143,9 @@ a{
 
 .profile{
   padding: 90px 20px 90px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 .profile__inform{
@@ -161,6 +161,36 @@ a{
 .profile__description{
   font: 18px Open Sans;
   padding: 20px 0;
+  width: 95vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.desc__price{
+  width: 500px;
+}
+
+.desc__comments{
+  width: 500px;
+}
+
+.comment1{
+  margin-bottom: 30px;
+}
+
+.comment__photo{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.comment__user{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 h1{
@@ -176,7 +206,9 @@ h1{
 
 .profile__same{
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
+  width: 100%;
 }
 
 .star{
@@ -193,11 +225,12 @@ h1{
 .same{
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .same__star{
-  width: 10px;
-  height: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 .same__inform{
@@ -217,4 +250,21 @@ body {
   margin: 0;
   padding: 0;
 }
-/*# sourceMappingURL=main.css.map */
+/*Adaptive*/
+
+@media screen and (max-width: 1115px){
+  .profile__description{
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .desc__comments, .desc__price{
+    width: 300px;
+  }
+  .photo__img{
+    height: 75px;
+    width: 75px;
+  }
+}
