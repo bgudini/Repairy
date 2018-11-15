@@ -11,32 +11,7 @@
 </head>
 <body>
 <div class="main">
-    <div class="map">
-        <div class="map__bg">
-            <img src="images/map.png" alt="">
-        </div>
-        <div class="driver">
-            <div class="driver__mark">
-                <img src="images/phoneRepair.svg" alt="" class="driver__img">
-                <div class="driver__inform">
-                    <img src="images/2bAMACkqtk8.jpg" alt="" class="driver__photo">
-                    <h3>Глеб Протасов</h3>
-                    <p class="inform__p">Ремонт iPhone за 30 минут, лучший в Европе</p>
-                    <a class="inform__a" href="inform.html">Узнать больше</a>
-                </div>
-            </div>
-        </div>
-        <div class="driver2">
-                <div class="driver__mark">
-                    <img src="images/pcRepair.svg" alt="" class="driver__img2">
-                    <div class="driver__inform2">
-                        <img src="images/y_92c715d9.jpg" alt="" class="driver__photo">
-                        <h3>Дмитрий Мурашкин</h3>
-                        <p class="inform__p">Ремонт ноутбуков за 30 минут, лучший в Санкт-Петербурге</p>
-                        <a class="inform__a" href="same1.html">Узнать больше</a>
-                    </div>
-                </div>
-            </div>
+    <div id="map">
     </div>
         <div class="hud__top">
             <a href="index.html" class="logo"><img src="images/GPP Logo.png" alt="Logo" class="logo"></a>
@@ -53,11 +28,8 @@
   crossorigin="anonymous"></script>
   <script src="jquery-ui.min.js"></script>
   <script src="jquery.ui.touch-punch.min.js"></script>
-  <script>
-      $(function(){
-          $('.map').draggable();
-      });
-  </script>
   <script src="main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp-t7PvTqCd99CZ_3Fk49Pbdh2a_-wDTc&callback=initMap"
+  type="text/javascript"></script>
 </body>
 </html>
