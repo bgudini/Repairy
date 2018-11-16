@@ -129,11 +129,22 @@ a{
   width: 95vw;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.profile__submit{
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: rgb(108, 247, 108);
+  margin-top: 20px;
+  font-size: 13px;
+  border: none;
 }
 
 .desc__price{
   width: 500px;
+  margin-right: 50px;
 }
 
 .desc__comments{
@@ -222,4 +233,23 @@ body {
 .gm-control-active,
 .gm-svpc {
   display: none !important;
+}
+
+/*Adaptive*/
+
+@media screen and (max-width: 1115px){
+  .profile__description{
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .desc__comments, .desc__price{
+    width: 300px;
+  }
+  .photo__img{
+    height: 75px;
+    width: 75px;
+  }
 }
