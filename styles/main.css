@@ -32,6 +32,7 @@ a{
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+          align-items: center;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -233,6 +234,17 @@ body {
 .gm-control-active,
 .gm-svpc {
   display: none !important;
+}
+
+.masters{
+  padding: 90px 20px;
+}
+
+.masters__list{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Adaptive*/
