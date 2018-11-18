@@ -39,3 +39,11 @@ function initMap() {
         phoneRepairWindow.open(map, phoneRepair);
     });
 }
+
+$('.heart').click(function(){
+    $(this).toggleClass('heart_red')
+});
+
+$('.heart_red').click(function(){
+    $(this).toggleClass('heart_uncolored')
+});
