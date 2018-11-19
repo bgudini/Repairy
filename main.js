@@ -47,3 +47,72 @@ $('.heart').click(function(){
 $('.heart_red').click(function(){
     $(this).toggleClass('heart_uncolored')
 });
+
+var favourite__master1 = document.querySelectorAll('.favourite__master')[0];
+var favourite__master2 = document.querySelectorAll('.favourite__master')[1];
+var favourite__master3 = document.querySelectorAll('.favourite__master')[2];
+var favourite__master4 = document.querySelectorAll('.favourite__master')[3];
+var heart_red1 = favourite__master1.querySelector('.heart_red');
+var heart_red2 = favourite__master2.querySelector('.heart_red');
+var heart1 = favourite__master3.querySelector('.heart');
+var heart2 = favourite__master4.querySelector('.heart')
+
+heart_red1.addEventListener("click", appending1)
+
+function appending1(){
+    if (heart_red1.classList.contains('heart_uncolored')){
+        var fragment = document.createDocumentFragment();
+        fragment.appendChild(favourite__master1);
+        document.querySelector('.nearest__masters').appendChild(fragment);
+    }
+    else{
+        var fragment = document.createDocumentFragment();
+        fragment.appendChild(favourite__master1);
+        document.querySelector('.masters__liked').appendChild(fragment);
+    }
+}
+
+heart_red2.addEventListener("click", appending2)
+
+function appending2(){
+    if (heart_red2.classList.contains('heart_uncolored')){
+        var fragment = document.createDocumentFragment();
+        fragment.appendChild(favourite__master2);
+        document.querySelector('.nearest__masters').appendChild(fragment);
+    }
+    else{
+        var fragment = document.createDocumentFragment();
+        fragment.appendChild(favourite__master2);
+        document.querySelector('.masters__liked').appendChild(fragment);
+    }
+}
+
+heart1.addEventListener("click", appending3)
+
+function appending3(){
+    if (heart1.classList.contains('heart_red')){
+        var fragment = document.createDocumentFragment();
+        fragment.appendChild(favourite__master3);
+        document.querySelector('.masters__liked').appendChild(fragment);
+    }
+    else {
+        var fragment = document.createDocumentFragment();
+        fragment.appendChild(favourite__master3);
+        document.querySelector('.nearest__masters').appendChild(fragment);
+    }
+}
+
+heart2.addEventListener("click", appending4)
+
+function appending4(){
+    if (heart2.classList.contains('heart_red')){
+        var fragment = document.createDocumentFragment();
+        fragment.appendChild(favourite__master4);
+        document.querySelector('.masters__liked').appendChild(fragment);
+    }
+    else {
+        var fragment = document.createDocumentFragment();
+        fragment.appendChild(favourite__master4);
+        document.querySelector('.nearest__masters').appendChild(fragment);
+    }
+}
