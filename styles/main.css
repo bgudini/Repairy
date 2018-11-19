@@ -255,7 +255,7 @@ body {
   margin-left: 15px;
   height: 50px;
   width: 50px;
-  background-image: url(././images/heart_red.svg);
+  background-image: url(/heart_red.svg);
 }
 
 .heart_uncolored{
