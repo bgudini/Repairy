@@ -9,9 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-<div class="main">
-    <div id="map">
-    </div>
+    <div class="main">
         <div class="hud__top">
             <a href="index.html" class="logo"><img src="images/GPP Logo.png" alt="Logo" class="logo"></a>
         </div>
@@ -20,13 +18,12 @@
             <a href="favourite.html" style="width: 55px; height: 55px;"><img src="images/star.svg" alt="" class="rate__logo"></a>
             <a href="search.html" style="width: 55px; height: 55px;"><img src="images/search.svg" alt="" class="loopa"></a>
         </div>
+        <div class="search">
+            <form action="search" method="post">
+                <input class="input" type="text">
+                <button class="submit"><img src="images/search.svg" alt=""></button>
+            </form>
+        </div>
     </div>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="main.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp-t7PvTqCd99CZ_3Fk49Pbdh2a_-wDTc&callback=initMap"
-  type="text/javascript"></script>
 </body>
 </html>
